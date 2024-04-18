@@ -1,3 +1,4 @@
+import 'package:ecombuy/const/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'unlogged_screen.dart';
@@ -16,8 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'ecombuy',
       home: Scaffold(
-          backgroundColor: Colors.black,
-          body: SafeArea(child: UnloggedScreen())),
+          backgroundColor: primary5, body: SafeArea(child: UnloggedScreen())),
     );
   }
 }

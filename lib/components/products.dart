@@ -123,7 +123,18 @@ class Products extends StatelessWidget {
                 ),
               ),
             ],
-          )
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Container(
+            child: const Center(
+                child: Image(
+                    fit: BoxFit.contain,
+                    image: AssetImage(
+                      "images/Banner1.png",
+                    ))),
+          ),
         ],
       ),
     );

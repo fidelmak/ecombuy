@@ -84,7 +84,10 @@ class UnloggedScreen extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              Products()
+              Products(),
+              Products(),
+              Products(),
+              Products(),
             ],
           ),
         ),

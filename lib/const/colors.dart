@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Color primary1 = const Color(0xFF00FF00);
+Color primary1 = Color.fromARGB(58, 217, 247, 217);
 Color primary2 = const Color(0xFFFDA429);
 Color primary3 = const Color(0xFF13181F);
 Color primary4 = const Color(0xFF00FF00);

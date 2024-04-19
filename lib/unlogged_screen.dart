@@ -1,6 +1,7 @@
 import 'package:ecombuy/const/colors.dart';
 import 'package:flutter/material.dart';
 
+import 'components/icon_card.dart';
 import 'components/scroll_widget.dart';
 import 'components/search_text.dart';
 
@@ -72,9 +73,13 @@ class UnloggedScreen extends StatelessWidget {
                       "see all ",
                       style: TextStyle(fontSize: 16, color: textBlue),
                     ),
-                  )
+                  ),
                 ],
-              )
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              IconCard(),
             ],
           ),
         ),

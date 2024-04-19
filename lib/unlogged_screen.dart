@@ -2,6 +2,7 @@ import 'package:ecombuy/const/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'components/icon_card.dart';
+import 'components/products.dart';
 import 'components/scroll_widget.dart';
 import 'components/search_text.dart';
 
@@ -64,7 +65,7 @@ class UnloggedScreen extends StatelessWidget {
                     onPressed: () {},
                     child: Text(
                       "Categories ",
-                      style: TextStyle(fontSize: 24, color: textBlack),
+                      style: TextStyle(fontSize: 20, color: textBlack),
                     ),
                   ),
                   TextButton(
@@ -80,6 +81,10 @@ class UnloggedScreen extends StatelessWidget {
                 height: 10,
               ),
               IconCard(),
+              SizedBox(
+                height: 30,
+              ),
+              Products()
             ],
           ),
         ),

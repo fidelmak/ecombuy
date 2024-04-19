@@ -5,7 +5,7 @@ Color primary2 = const Color(0xFFFDA429);
 Color primary3 = const Color(0xFF13181F);
 Color primary4 = const Color(0xFF00FF00);
 Color primary5 = Colors.white;
-Color priColor = const Color(0xFFEEFAF6);
+Color priColor = Color.fromRGBO(238, 250, 246, 1);
 
 Color secondary1 = const Color(0xFF3A9B7A);
 Color secondary2 = const Color(0xFF3A9B7A);
@@ -19,3 +19,4 @@ Color textColor4 = const Color(0xFFEFF5FB);
 Color textBlack = Colors.black;
 Color textWhite = Colors.white;
 Color textBlue = Colors.blue;
+Color textGrey = Colors.grey.shade400;

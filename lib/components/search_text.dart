@@ -22,12 +22,12 @@ class SearchText extends StatelessWidget {
           obscureText: obscure,
           decoration: InputDecoration(
             hintText: hint,
-            hintStyle: TextStyle(fontSize: 18),
+            hintStyle: TextStyle(fontSize: 18, color: textGrey),
             suffixIcon: IconButton(
               icon: Icon(
                 Icons.search,
                 size: 30,
-                color: textBlue,
+                color: primary3,
               ),
               onPressed: () {
                 // Add search functionality here

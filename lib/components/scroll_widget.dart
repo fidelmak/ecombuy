@@ -11,6 +11,7 @@ class ScrollSlider extends StatelessWidget {
       child: CarouselSlider(
         options: CarouselOptions(
           height: 200,
+          autoPlayInterval: const Duration(seconds: 3),
           enableInfiniteScroll: true,
           enlargeCenterPage: true,
           autoPlay: true,

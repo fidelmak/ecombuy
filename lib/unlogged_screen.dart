@@ -1,7 +1,10 @@
 import 'package:ecombuy/const/colors.dart';
 import 'package:flutter/material.dart';
 
+import 'components/banner.dart';
+import 'components/category.dart';
 import 'components/icon_card.dart';
+import 'components/product_card.dart';
 import 'components/products.dart';
 import 'components/scroll_widget.dart';
 import 'components/search_text.dart';
@@ -84,10 +87,71 @@ class UnloggedScreen extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              Products(),
-              Products(),
-              Products(),
-              Products(),
+              Products(
+                features: CategoryFeatures(
+                  categoryText1: Text(
+                    " Featured Products ",
+                    style: TextStyle(fontSize: 20, color: textBlack),
+                  ),
+                  categoryText2: Text(
+                    "see all ",
+                    style: TextStyle(fontSize: 16, color: textBlue),
+                  ),
+                  categoryFunction1: () {},
+                  categoryFunction2: () {},
+                ),
+                card1: ProductCard(
+                  product_image:
+                      Image(image: AssetImage("images/earpiece.png")),
+                  product_text: Text("Wireless Earpiece "),
+                  button_text: Text("Add"),
+                  product_price: Text("USD 2000.00"),
+                ),
+                card2: ProductCard(
+                  product_image: Image(image: AssetImage("images/headset.png")),
+                  product_text: Text("Wireless Headset"),
+                  button_text: Text("Add"),
+                  product_price: Text("USD 5000.00"),
+                ),
+                bannerScroll: const BannerScroll(
+                    banner_image: Image(
+                        fit: BoxFit.contain,
+                        image: AssetImage(
+                          "images/Banner1.png",
+                        ))),
+              ),
+              Products(
+                features: CategoryFeatures(
+                  categoryText1: Text(
+                    " Best Sellers ",
+                    style: TextStyle(fontSize: 20, color: textBlack),
+                  ),
+                  categoryText2: Text(
+                    "see all ",
+                    style: TextStyle(fontSize: 16, color: textBlue),
+                  ),
+                  categoryFunction1: () {},
+                  categoryFunction2: () {},
+                ),
+                card1: ProductCard(
+                  product_image: Image(image: AssetImage("images/headset.png")),
+                  product_text: Text("Wireless Headset"),
+                  button_text: Text("Add"),
+                  product_price: Text("USD 5000.00"),
+                ),
+                card2: ProductCard(
+                  product_image: Image(image: AssetImage("images/drill.png")),
+                  product_text: Text("Wireless Headset"),
+                  button_text: Text("Add"),
+                  product_price: Text("USD 5000.00"),
+                ),
+                bannerScroll: const BannerScroll(
+                    banner_image: Image(
+                        fit: BoxFit.contain,
+                        image: AssetImage(
+                          "images/banner2.png",
+                        ))),
+              )
             ],
           ),
         ),

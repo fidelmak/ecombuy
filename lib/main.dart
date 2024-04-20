@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'ecombuy',
       home: Scaffold(
-          backgroundColor: textWhite, body: SafeArea(child: UnloggedScreen())),
+          backgroundColor: textWhite,
+          body: const SafeArea(child: UnloggedScreen())),
     );
   }
 }

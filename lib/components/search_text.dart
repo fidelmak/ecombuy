@@ -29,9 +29,7 @@ class SearchText extends StatelessWidget {
                 size: 30,
                 color: primary3,
               ),
-              onPressed: () {
-                // Add search functionality here
-              },
+              onPressed: () {},
             ),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(color: priColor),

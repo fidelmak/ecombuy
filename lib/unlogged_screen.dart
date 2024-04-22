@@ -10,6 +10,7 @@ import 'components/product_card.dart';
 import 'components/products.dart';
 import 'components/scroll_widget.dart';
 import 'components/search_text.dart';
+import 'package:flutter_popup/flutter_popup.dart';
 
 class UnloggedScreen extends StatelessWidget {
   const UnloggedScreen({super.key});
@@ -19,35 +20,50 @@ class UnloggedScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(24.0),
       child: Scaffold(
+        floatingActionButton: CustomPopup(
+          barrierColor: Colors.black.withOpacity(0.1),
+          backgroundColor: Colors.white,
+          content: Text('Hey! fella , shop your \n favourites'),
+          child: Icon(Icons.message_outlined, color: Colors.grey),
+        ),
         bottomNavigationBar: BottomNav(),
         backgroundColor: textWhite,
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  SizedBox(
-                    width: 90,
+                  Container(
+                    child: null,
+                  ),
+                  Container(
+                    child: null,
                   ),
                   Text(
                     "Mega Mall ",
                     style: TextStyle(color: textBlue, fontSize: 24),
                   ),
-                  const SizedBox(
-                    width: 90,
-                  ),
-                  Icon(
-                    Icons.notifications_none_rounded,
-                    size: 30,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(
-                    Icons.shopping_cart_outlined,
-                    size: 30,
-                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.notifications_none_outlined,
+                            size: 30,
+                          )),
+                      SizedBox(
+                        width: 1,
+                      ),
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.shopping_cart_outlined,
+                            size: 30,
+                          )),
+                    ],
+                  )
                 ],
               ),
               SizedBox(

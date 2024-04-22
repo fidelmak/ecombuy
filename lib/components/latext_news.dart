@@ -136,7 +136,7 @@ class LatextNews extends StatelessWidget {
               width: 380,
               height: 50,
               child: TextButton(
-                onPressed: null,
+                onPressed: () {},
                 child: Text("Read More"),
               ),
             ),

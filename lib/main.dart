@@ -1,5 +1,6 @@
 import 'package:ecombuy/const/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'unlogged_screen.dart';
 
@@ -13,12 +14,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'ecombuy',
-      home: Scaffold(
-          backgroundColor: textWhite,
-          body: const SafeArea(child: UnloggedScreen())),
+    return ScreenUtilInit(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'ecombuy',
+        home: Scaffold(
+            backgroundColor: textWhite,
+            body: const SafeArea(child: UnloggedScreen())),
+      ),
     );
   }
 }

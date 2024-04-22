@@ -8,7 +8,7 @@ class LatextNews extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(18.0),
-      child: const Column(
+      child: Column(
         children: <Widget>[
           Row(
             children: [
@@ -124,6 +124,23 @@ class LatextNews extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
+          DecoratedBox(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              border: Border.all(
+                color: Colors.black,
+                width: 2.0,
+              ),
+            ),
+            child: Container(
+              width: 380,
+              height: 50,
+              child: TextButton(
+                onPressed: null,
+                child: Text("Read More"),
+              ),
+            ),
+          )
         ],
       ),
     );

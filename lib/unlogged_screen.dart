@@ -2,6 +2,7 @@ import 'package:ecombuy/const/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'components/banner.dart';
+import 'components/bottom_nav.dart';
 import 'components/category.dart';
 import 'components/icon_card.dart';
 import 'components/latext_news.dart';
@@ -18,6 +19,7 @@ class UnloggedScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(24.0),
       child: Scaffold(
+        bottomNavigationBar: BottomNav(),
         backgroundColor: textWhite,
         body: SingleChildScrollView(
           child: Column(

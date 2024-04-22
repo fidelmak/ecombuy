@@ -1,3 +1,4 @@
+import 'package:ecombuy/const/colors.dart';
 import 'package:flutter/material.dart';
 
 class LatextNews extends StatelessWidget {
@@ -19,7 +20,7 @@ class LatextNews extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 50,
+            height: 40,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -29,15 +30,23 @@ class LatextNews extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Philosophy That Addresses Topics Such As Goodness"),
+                    Text(
+                      "Philosophy That Addresses Topics Such As Goodness",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
                     SizedBox(
-                      height: 5,
+                      height: 8,
                     ),
                     Text("Agar tetap kinclong, bodi motor ten..."),
                     SizedBox(
-                      height: 5,
+                      height: 8,
                     ),
-                    Text("13 Jan 2021")
+                    Text(
+                      "13 Jan 2021",
+                      style: TextStyle(fontSize: 10, color: Colors.grey),
+                    )
                   ],
                 ),
               ),
@@ -45,7 +54,7 @@ class LatextNews extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 50,
+            height: 40,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -55,19 +64,27 @@ class LatextNews extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Philosophy That Addresses Topics Such As Goodness"),
-                    SizedBox(
-                      height: 5,
+                    Text(
+                      "Many Inquiries Outside Of Academia Are Philosophical In The Broad Sense",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
-                    Text("Agar tetap kinclong, bodi motor ten..."),
                     SizedBox(
-                      height: 5,
+                      height: 8,
                     ),
-                    Text("13 Jan 2021")
+                    Text("In one general sense, philosophy is ass..."),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text(
+                      "13 Jan 2021",
+                      style: TextStyle(fontSize: 10, color: Colors.grey),
+                    )
                   ],
                 ),
               ),
-              Image(image: AssetImage("images/blog2.png"))
+              Image(image: AssetImage("images/blog1.png"))
             ],
           ),
           SizedBox(
@@ -81,20 +98,31 @@ class LatextNews extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Philosophy That Addresses Topics Such As Goodness"),
+                    Text(
+                      "Tips Merawat Bodi Mobil agar Tidak Terlihat Kusam",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
                     SizedBox(
-                      height: 5,
+                      height: 8,
                     ),
                     Text("Agar tetap kinclong, bodi motor ten..."),
                     SizedBox(
-                      height: 5,
+                      height: 8,
                     ),
-                    Text("13 Jan 2021")
+                    Text(
+                      "13 Jan 2021",
+                      style: TextStyle(fontSize: 10, color: Colors.grey),
+                    )
                   ],
                 ),
               ),
-              Image(image: AssetImage("images/blog1.png"))
+              Image(image: AssetImage("images/blog2.png"))
             ],
+          ),
+          SizedBox(
+            height: 40,
           ),
         ],
       ),

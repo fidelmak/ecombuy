@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'components/banner.dart';
 import 'components/category.dart';
 import 'components/icon_card.dart';
+import 'components/latext_news.dart';
 import 'components/product_card.dart';
 import 'components/products.dart';
 import 'components/scroll_widget.dart';
@@ -197,13 +198,13 @@ class UnloggedScreen extends StatelessWidget {
                   categoryFunction1: () {},
                   categoryFunction2: () {},
                 ),
-                card1: ProductCard(
+                card1: const ProductCard(
                   product_image: Image(image: AssetImage("images/headset.png")),
                   product_text: Text("Wireless Headset"),
                   button_text: Text("Add"),
                   product_price: Text("USD 5000.00"),
                 ),
-                card2: ProductCard(
+                card2: const ProductCard(
                   product_image: Image(image: AssetImage("images/drill.png")),
                   product_text: Text("Wireless Headset"),
                   button_text: Text("Add"),
@@ -215,7 +216,8 @@ class UnloggedScreen extends StatelessWidget {
                         image: AssetImage(
                           "images/banner2.png",
                         ))),
-              )
+              ),
+              LatextNews(),
             ],
           ),
         ),

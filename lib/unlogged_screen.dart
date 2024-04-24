@@ -14,6 +14,7 @@ import 'package:flutter_popup/flutter_popup.dart';
 
 class UnloggedScreen extends StatelessWidget {
   const UnloggedScreen({super.key});
+  static String id = "unloggedScreen";
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +71,7 @@ class UnloggedScreen extends StatelessWidget {
                 height: 50,
               ),
               const SearchText(
-                hint: 'Serach product name',
+                hint: 'Search product name',
                 obscure: false,
               ),
               SizedBox(

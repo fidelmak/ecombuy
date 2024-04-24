@@ -1,3 +1,4 @@
+import 'package:ecombuy/screens/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_popup_card/flutter_popup_card.dart';
 
@@ -53,7 +54,7 @@ class BottomNav extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                      Row(
+                                      const Row(
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
@@ -91,7 +92,10 @@ class BottomNav extends StatelessWidget {
                                           width: 380,
                                           height: 50,
                                           child: TextButton(
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              Navigator.pushNamed(
+                                                  context, SignIn.id);
+                                            },
                                             child: Text(
                                               "Login",
                                               style: TextStyle(

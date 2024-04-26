@@ -1,19 +1,4 @@
-import 'package:ecombuy/const/colors.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_popup_card/flutter_popup_card.dart';
-import 'package:provider/provider.dart';
-
-import '1aaaa/provider/counter_model.dart';
-import 'components/banner.dart';
-import 'components/bottom_nav.dart';
-import 'components/category.dart';
-import 'components/icon_card.dart';
-import 'components/latext_news.dart';
-import 'components/product_card.dart';
-import 'components/products.dart';
-import 'components/scroll_widget.dart';
-import 'components/search_text.dart';
-import 'package:flutter_popup/flutter_popup.dart';
+import 'export.dart';
 
 class UnloggedScreen extends StatelessWidget {
   const UnloggedScreen({super.key});

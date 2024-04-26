@@ -1,5 +1,6 @@
 import 'package:ecombuy/const/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_popup_card/flutter_popup_card.dart';
 import 'package:provider/provider.dart';
 
 import '1aaaa/provider/counter_model.dart';
@@ -62,7 +63,99 @@ class UnloggedScreen extends StatelessWidget {
                           width: 1,
                         ),
                         IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              showPopupCard(
+                                context: context,
+                                builder: (context) {
+                                  return PopupCard(
+                                      elevation: 8,
+                                      color: Colors.white,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(12.0),
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsets.all(24.0),
+                                        child: SizedBox(
+                                          height: 250,
+                                          width: 300,
+                                          child: Center(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
+                                                  children: [
+                                                    Text(
+                                                      'Make Payment ',
+                                                      style: TextStyle(
+                                                          fontSize: 20),
+                                                    ),
+                                                    IconButton(
+                                                        onPressed: null,
+                                                        icon: Icon(
+                                                          Icons.cancel_outlined,
+                                                          color: Colors.black,
+                                                        )),
+                                                  ],
+                                                ),
+                                                SizedBox(
+                                                  height: 30,
+                                                ),
+                                                Text(
+                                                    ' You have ${counterModel.currentCount} in your cart'),
+                                                SizedBox(
+                                                  height: 20,
+                                                ),
+                                                SizedBox(
+                                                  height: 50,
+                                                  width: 50,
+                                                  child: Image(
+                                                      image: AssetImage(
+                                                          "images/pay.png")),
+                                                ),
+                                                SizedBox(
+                                                  height: 30,
+                                                ),
+                                                DecoratedBox(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.blue,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10.0),
+                                                    border: Border.all(
+                                                      color: Colors.blue,
+                                                      width: 2.0,
+                                                    ),
+                                                  ),
+                                                  child: Container(
+                                                    width: 380,
+                                                    height: 50,
+                                                    child: TextButton(
+                                                      onPressed: () {},
+                                                      child: Text(
+                                                        "Make Payment",
+                                                        style: TextStyle(
+                                                            color:
+                                                                Colors.white),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ));
+                                },
+                                offset: const Offset(-16, 70),
+                                alignment: Alignment.center,
+                                useSafeArea: true,
+                              );
+                            },
                             icon: Icon(
                               Icons.shopping_cart_outlined,
                               size: 30,

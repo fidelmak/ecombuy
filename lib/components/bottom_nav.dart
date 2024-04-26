@@ -113,7 +113,7 @@ class BottomNav extends StatelessWidget {
                       offset: const Offset(-16, 70),
                       alignment: Alignment.center,
                       useSafeArea: true,
-                    );
+                    ); // show pop up
                   },
                   icon: Icon(Icons.person_4_outlined)),
               Text('Login')

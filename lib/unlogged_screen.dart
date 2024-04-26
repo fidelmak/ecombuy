@@ -13,8 +13,8 @@ class UnloggedScreen extends StatelessWidget {
           floatingActionButton: CustomPopup(
             barrierColor: Colors.black.withOpacity(0.1),
             backgroundColor: Colors.white,
-            content:
-                Text(' You have ${counterModel.currentCount} in your cart presently'),
+            content: Text(
+                ' You have ${counterModel.currentCount} in your cart presently'),
             child: Icon(Icons.shopping_cart_outlined, color: Colors.grey),
           ),
           bottomNavigationBar: BottomNav(),
@@ -75,7 +75,7 @@ class UnloggedScreen extends StatelessWidget {
                                                           .spaceBetween,
                                                   children: [
                                                     Text(
-                                                      'Make Payment ',
+                                                      'Make Your Payment ',
                                                       style: TextStyle(
                                                           fontSize: 20),
                                                     ),

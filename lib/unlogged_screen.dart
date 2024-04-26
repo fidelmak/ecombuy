@@ -75,7 +75,7 @@ class UnloggedScreen extends StatelessWidget {
                                                           .spaceBetween,
                                                   children: [
                                                     Text(
-                                                      'Make Your Payment ',
+                                                      'Make Your Payment! ',
                                                       style: TextStyle(
                                                           fontSize: 20),
                                                     ),

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../1aaaa/provider/counter_model.dart';
 
 class ProductCard extends StatelessWidget {
   final Image product_image;
@@ -16,6 +19,7 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final counter = Provider.of<CounterModel>(context);
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5.0),
@@ -41,7 +45,9 @@ class ProductCard extends StatelessWidget {
             height: 20,
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              counter.increment();
+            },
             style: ButtonStyle(
               foregroundColor: MaterialStateProperty.all<Color>(
                   Colors.white), // Set text color

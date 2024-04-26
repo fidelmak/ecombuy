@@ -14,7 +14,7 @@ class UnloggedScreen extends StatelessWidget {
             barrierColor: Colors.black.withOpacity(0.1),
             backgroundColor: Colors.white,
             content:
-                Text(' You have ${counterModel.currentCount} in your cart'),
+                Text(' You have ${counterModel.currentCount} in your cart presently'),
             child: Icon(Icons.shopping_cart_outlined, color: Colors.grey),
           ),
           bottomNavigationBar: BottomNav(),
